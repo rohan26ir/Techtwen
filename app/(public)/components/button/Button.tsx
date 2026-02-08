@@ -10,9 +10,9 @@ interface ButtonProps {
 export default function Button({ children, variant = 'solid', size = 'md', onClick }: ButtonProps) {
 
   const variantClasses = {
-    outline: "border border-gray-300 text-gray-700 hover:bg-gray-100",
-    solid: "bg-blue-500 text-white hover:bg-blue-600",
-    ghost: "text-gray-700 hover:bg-gray-100",
+    outline: "border border-gray-300 text-foreground dark:text-foreground",
+    solid: "text-foreground dark:text-foreground hover:bg-blue-600",
+    ghost: "text-foreground dark:text-foreground hover:bg-gray-100",
   };
 
   const sizeClasses = {
@@ -28,7 +28,7 @@ export default function Button({ children, variant = 'solid', size = 'md', onCli
   return (
     <button 
       onClick={onClick} 
-      className={`${variantClass} ${sizeClass} rounded transition-colors`}
+      className={`${variantClass} ${sizeClass} rounded transition-colors cursor-pointer`}
     >
       {children}
     </button>
