@@ -1,3 +1,4 @@
+import HomeHero from "./(public)/components/ui/homeHero";
 
 export const metadata = {
   title: "Techtwen",
@@ -7,9 +8,9 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      <div>
-        
-      </div>
+      
+      <HomeHero></HomeHero>
+      
     </div>
   );
 }
