@@ -3,10 +3,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation,EffectFade } from 'swiper/modules';
+import Image from 'next/image';
 
 interface CarouselItem {
   id: number;
@@ -24,6 +26,7 @@ export default function Carousel({ carousel }: CarouselProps) {
       <Swiper
         spaceBetween={30}
         centeredSlides
+        effect={'fade'}
         autoplay={{
           delay: 5500,
           disableOnInteraction: false,
@@ -31,17 +34,26 @@ export default function Carousel({ carousel }: CarouselProps) {
         pagination={{ clickable: true }}
         navigation
         // modules={[Autoplay, Pagination, Navigation]}
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay, Pagination, EffectFade]}
         className="mySwiper h-full bg-accent dark:bg-accent"
       >
         {carousel.map((item) => (
           <SwiperSlide
             key={item.id}
           >
-            <div className='h-full flex justify-center items-center'>
-              <h2 className="text-white text-2xl font-semibold">
-               {item.title}
-              </h2>
+            <div className='relative h-full flex justify-center items-center'>
+              <Image src={item.image} 
+                     alt={item.title}
+                     width='100'
+                     height='100'
+                     className='h-full w-full object-cover 
+                                relative z-0'>
+                </Image>
+                {/* center hero text content */}
+                <div className='absolute m-auto z-10'>
+                  <h2 className='text-6xl'>{item.title}</h2>
+                </div>
+
             </div>
           </SwiperSlide>
         ))}

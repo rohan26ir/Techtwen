@@ -23,7 +23,7 @@ export default function Footer() {
   const socialMenu : FooterMenu[] = [
     { id: 1, name: "Facebook", path: "/" },
     { id: 2, name: "Linkedin", path: "/" },
-    { id: 2, name: "Twitter", path: "/" },
+    { id: 3, name: "Twitter", path: "/" },
   ]
 
 
