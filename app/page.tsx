@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground dark:bg-background dark:text-foreground  ">
       
-      <div className="flex flex-col justify-between gap-20 my-20">
+      <div className="flex flex-col justify-between gap-20 mb-20">
         <HomeHero></HomeHero>
 
         <Stats></Stats>

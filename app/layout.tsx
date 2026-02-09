@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "./(public)/components/shared/Navbar";
 import Footer from "./(public)/components/shared/Footer";
 import { ThemeProvider } from "./(public)/components/theme-provider";
+import ReduxProvider from "./(public)/ReduxProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,12 +39,14 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-
-        <Navbar />
-         <main className="min-h-screen ">
-           {children}
-         </main>
-        <Footer />
+          <ReduxProvider>
+            <Navbar />
+             <main className="min-h-screen ">
+              {children}
+             </main>
+            <Footer />
+          </ReduxProvider>
+        
 
          </ThemeProvider>
       </body>
