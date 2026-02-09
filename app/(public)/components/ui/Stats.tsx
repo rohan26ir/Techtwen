@@ -14,9 +14,9 @@ export default function Stats() {
 
   const NumberStat: NUmberProp[] = [
     { id: 1, title: "Years of Services", count: 2 },
-    { id: 1, title: "Projects", count: 25 },
-    { id: 1, title: "Team Members", count: 4 },
-    { id: 1, title: "Happy Client", count: 20 },
+    { id: 2, title: "Projects", count: 25 },
+    { id: 3, title: "Team Members", count: 4 },
+    { id: 4, title: "Happy Client", count: 20 },
   ]
 
   return (

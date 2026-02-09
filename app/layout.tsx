@@ -6,6 +6,7 @@ import Navbar from "./(public)/components/shared/Navbar";
 import Footer from "./(public)/components/shared/Footer";
 import { ThemeProvider } from "./(public)/components/theme-provider";
 import ReduxProvider from "./(public)/ReduxProvider";
+import ChatBot from "./(public)/components/ui/ChatBot";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,8 @@ export default function RootLayout({
              <main className="min-h-screen ">
               {children}
              </main>
+
+             <ChatBot></ChatBot>
             <Footer />
           </ReduxProvider>
         
