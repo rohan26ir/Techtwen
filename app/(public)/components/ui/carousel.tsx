@@ -7,7 +7,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Autoplay, Pagination, Navigation,EffectFade } from 'swiper/modules';
+import { Autoplay, Pagination,EffectFade } from 'swiper/modules';
 import Image from 'next/image';
 
 interface CarouselItem {
@@ -49,9 +49,9 @@ export default function Carousel({ carousel }: CarouselProps) {
                      className='h-full w-full object-cover 
                                 relative z-0'>
                 </Image>
-                {/* center hero text content */}
+                {/* center hero text */}
                 <div className='absolute m-auto z-10'>
-                  <h2 className='text-6xl'>{item.title}</h2>
+                  <h2 className='text-6xl font-bold'>{item.title}</h2>
                 </div>
 
             </div>

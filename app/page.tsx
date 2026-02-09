@@ -1,4 +1,5 @@
 import HomeHero from "./(public)/components/ui/homeHero";
+import Stats from "./(public)/components/ui/Stats";
 
 export const metadata = {
   title: "Techtwen",
@@ -7,9 +8,13 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-background text-foreground dark:bg-background dark:text-foreground  ">
       
-      <HomeHero></HomeHero>
+      <div className="flex flex-col justify-between gap-20 my-20">
+        <HomeHero></HomeHero>
+
+        <Stats></Stats>
+      </div>
       
     </div>
   );

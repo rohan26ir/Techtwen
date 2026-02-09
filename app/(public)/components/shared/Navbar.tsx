@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-background dark:bg-background text-foreground dark:text-foreground shadow border-b-2 ">
-      <div className="container mx-auto px-4">
+      <div className="w-[98%] mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           
           {/* logo */}
