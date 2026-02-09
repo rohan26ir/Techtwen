@@ -36,7 +36,7 @@ export default function Stats() {
                 className="group w-full flex flex-col 
                            justify-between gap-20 p-5 
                            bg-secondary dark:bg-secondary 
-                          hover:bg-sky-800 
+                           hover:bg-[#313257]
                            font-bold transition-all duration-300"
               >
                 <div className="h-full text-2xl 

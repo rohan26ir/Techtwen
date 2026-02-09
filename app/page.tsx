@@ -1,5 +1,6 @@
 import HomeHero from "./(public)/components/ui/homeHero";
 import Stats from "./(public)/components/ui/Stats";
+import TrustedBy from "./(public)/components/ui/TrustedBy";
 
 export const metadata = {
   title: "Techtwen",
@@ -12,6 +13,8 @@ export default function Home() {
       
       <div className="flex flex-col justify-between gap-20 mb-20">
         <HomeHero></HomeHero>
+
+        <TrustedBy></TrustedBy>
 
         <Stats></Stats>
       </div>
