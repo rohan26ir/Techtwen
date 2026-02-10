@@ -20,7 +20,7 @@ export default function Stats() {
   ]
 
   return (
-    <div>
+    <div className="bg-background py-20">
 
       <div className="w-[98%] mx-auto px-4 flex flex-col justify-center relative">
 

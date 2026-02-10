@@ -1,3 +1,4 @@
+import WorkProcess from "./(public)/components/ui/homeComp/workProcess";
 import HomeHero from "./(public)/components/ui/homeHero";
 import Stats from "./(public)/components/ui/Stats";
 import TrustedBy from "./(public)/components/ui/TrustedBy";
@@ -11,12 +12,14 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground dark:bg-background dark:text-foreground  ">
       
-      <div className="flex flex-col justify-between gap-20 mb-20">
+      <div className="flex flex-col justify-between ">
         <HomeHero></HomeHero>
 
         <TrustedBy></TrustedBy>
 
         <Stats></Stats>
+
+        <WorkProcess></WorkProcess>
       </div>
       
     </div>

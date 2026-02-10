@@ -237,7 +237,7 @@ useEffect(() => {
     <div className="fixed bottom-2 right-2 z-50">
       {/* Chat Window */}
       {isOpen && (
-        <div className="mb-4 w-80 sm:w-80 h-[500px] bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden border border-gray-200 animate-in slide-in-from-bottom-5 duration-300">
+        <div className="mb-4 w-80 sm:w-80 h-125 bg-white rounded-lg shadow-2xl flex flex-col overflow-hidden border border-gray-200 animate-in slide-in-from-bottom-5 duration-300">
           {/* Header */}
           <div className="bg-[#442B3D] text-white p-4 flex justify-between items-center">
             <div className="flex items-center gap-3">

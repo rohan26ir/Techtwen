@@ -24,7 +24,7 @@ export default function TrustedBy() {
   ]
 
   return (
-    <div>
+    <div className="bg-gray-200 py-20">
       <div className="w-[95%] mx-auto">
 
         <div className="grid grid-cols-11 justify-between gap-5">

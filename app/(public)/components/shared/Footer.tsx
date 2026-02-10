@@ -28,7 +28,7 @@ export default function Footer() {
 
 
   return (
-    <div className=" py-4">
+    <div className="pb-4">
 
       <div className="flex flex-col justify-between gap-2">
 
