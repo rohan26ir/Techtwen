@@ -327,7 +327,7 @@ useEffect(() => {
                     setInputValue(suggestion);
                     setTimeout(() => handleSendMessage(), 100);
                   }}
-                  className="px-3 py-1.5 text-xs bg-gray-100 hover:bg-gray-200 rounded-full whitespace-nowrap transition-colors"
+                  className="px-3 py-1.5 text-foreground dark:text-black text-xs bg-gray-100 hover:bg-gray-200 rounded-full whitespace-nowrap transition-colors"
                 >
                   {suggestion}
                 </button>
@@ -344,12 +344,12 @@ useEffect(() => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Type your message..."
-                className="flex-1 px-4 py-2.5 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#442B3D] focus:border-transparent text-sm"
+                className="flex-1 px-4 py-2.5 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#442B3D] focus:border-transparent text-sm text-foreground dark:text-accent"
                 disabled={isTyping}
               />
               <button
                 onClick={handleSendMessage}
-                className="bg-[#442B3D] text-white p-2.5 rounded-full hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-[#442B3D] text-foreground  p-2.5 rounded-full hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={!inputValue.trim() || isTyping}
                 aria-label="Send message"
               >

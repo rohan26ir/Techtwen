@@ -24,7 +24,7 @@ export default function TrustedBy() {
   ]
 
   return (
-    <div className="bg-gray-200 py-20">
+    <div className="bg-secondary dark:bg-secondary py-20">
       <div className="w-[95%] mx-auto">
 
         <div className="grid grid-cols-11 justify-between gap-5">
@@ -34,7 +34,7 @@ export default function TrustedBy() {
             <p className="text-lg">People Use Us for anagen their team</p>
           </div>
           {/* center */}
-          <div className="grid col-span-1 h-full w-0.5 bg-secondary"></div>
+          <div className="grid col-span-1 h-full w-0.5 mx-auto justify-center bg-secondary"></div>
           {/* right */}
           <div className="grid col-span-7 gap-5">
             <Marquee

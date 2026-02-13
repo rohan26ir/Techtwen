@@ -24,7 +24,7 @@ export default function Navbar() {
   { id: 1, name: "Home", path: "/" },
   { id: 2, name: "Services", path: "/services" },
   { id: 3, name: "About", path: "/about" },
-  { id: 4, name: "Contact", path: "/contact-us" },
+  { id: 4, name: "Career", path: "/contact-us" },
 ];
 
   return (
@@ -51,7 +51,7 @@ export default function Navbar() {
           {/* right button */}
           <div className="flex flex-row justify-end items-center gap-1">
             <Button variant="outline" size="md" onClick={handleContact}>
-              Sign In
+              Contact Us
             </Button>
 
             <DarkMode ></DarkMode>
