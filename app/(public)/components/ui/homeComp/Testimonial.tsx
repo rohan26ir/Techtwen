@@ -53,12 +53,13 @@ export default function Testimonial() {
     <div className="bg-secondary dark:bg-secondary py-20">
       <div className="w-[95%] mx-auto">
 
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-10 md:gap-20">
           {/* heading */}
           <div className="text-start">
-            <h2 className="text-9xl font-extrabold">What Clients Say</h2>
+            <h2 className="text-6xl md:text-9xl font-extrabold">What Clients Say</h2>
             <p className="text-2xl">Real feedback from businesses we’ve helped grow.</p>
           </div>
+
           {/* body */}
           <div className="h-full">
             <SwiperCard data={sampleData} />

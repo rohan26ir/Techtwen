@@ -50,10 +50,12 @@ export default function Carousel({ carousel }: CarouselProps) {
         {carousel.map((item) => (
           <SwiperSlide key={item.id}>
             <div className='relative h-full flex justify-center items-center'>
+              
               {/* center hero text */}
-              <div className='absolute m-auto z-10 text-center  w-[70%] mx-auto'>
-                <h2 className='text-8xl leading-[100%] font-bold text-white mb-4'>{item.heading}</h2>
-                <h3 className='text-3xl text-white'>{item.subheading}</h3>
+              <div className='absolute m-auto z-10 text-center w-[90%] md:w-[70%] mx-auto gap-10'>
+
+                <h2 className='text-6xl md:text-8xl leading-[100%] font-bold text-white mb-4'>{item.heading}</h2>
+                <h3 className='text-xl md:text-3xl text-white'>{item.subheading}</h3>
 
 
                 

@@ -27,16 +27,20 @@ export default function TrustedBy() {
     <div className="bg-secondary dark:bg-secondary py-20">
       <div className="w-[95%] mx-auto">
 
-        <div className="grid grid-cols-11 justify-between gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-11 justify-between gap-5">
+          
+          
           {/* left */}
-          <div className="grid col-span-3 ">
+          <div className="grid col-span-1 md:col-span-3 ">
             <h2 className="text-6xl font-bold">50,000+</h2>
             <p className="text-lg">People Use Us for anagen their team</p>
           </div>
+
           {/* center */}
           <div className="grid col-span-1 h-full w-0.5 mx-auto justify-center bg-secondary"></div>
+
           {/* right */}
-          <div className="grid col-span-7 gap-5">
+          <div className="grid col-span-1 md:col-span-7 gap-5">
             <Marquee
               pauseOnHover={true} 
               className="flex justify-between">
@@ -47,6 +51,8 @@ export default function TrustedBy() {
               ))}
             </Marquee>
           </div>
+
+
         </div>
 
       </div>

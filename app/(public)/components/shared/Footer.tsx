@@ -17,7 +17,7 @@ export default function Footer() {
   ]
   const legalmenu : FooterMenu[] = [
     { id: 1, name: "Privecy Policy", path: "/" },
-    { id: 2, name: "Terms & Condition", path: "/services" },
+    { id: 2, name: "Terms_Condition", path: "/services" },
   ]
 
   const socialMenu : FooterMenu[] = [
@@ -33,13 +33,13 @@ export default function Footer() {
       <div className="flex flex-col justify-between gap-2">
 
          {/* start-menu */}
-         <div className="flex flex-col md:flex-row justify-between bg-black dark:bg-background backdrop-blur-2xl p-5  border-2 ">
+         <div className="flex flex-col md:flex-row justify-between items-center bg-black dark:bg-background backdrop-blur-2xl p-5  border-2  gap-2">
 
            {/* left */}
             <div className="flex flex-row gap-2">
               {
                 socialMenu.map((footMenu) => (
-                  <Link href={footMenu.path} key={footMenu.id}>
+                  <Link href={footMenu.path} key={footMenu.id} className="w-full">
                     <p className="py-2 px-4 rounded-sm bg-background dark:bg-background text-foreground dark:text-foreground border-white">{footMenu.name}</p>
                   </Link>
                 ))
@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="flex flex-row gap-2">
               {
                 footermenu.map((footMenu) => (
-                  <Link href={footMenu.path} key={footMenu.id}>
+                  <Link href={footMenu.path} key={footMenu.id} className="w-full">
                     <p className="py-2 px-4 rounded-sm bg-background dark:bg-background text-foreground dark:text-foreground">{footMenu.name}</p>
                   </Link>
                 ))
@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="flex flex-row gap-2 ">
               {
                 legalmenu.map((footMenu) => (
-                  <Link href={footMenu.path} key={footMenu.id}>
+                  <Link href={footMenu.path} key={footMenu.id} className="w-full md:w-auto">
                     <p className="py-2 px-4 rounded-sm bg-background dark:bg-background text-foreground dark:text-foreground">{footMenu.name}</p>
                   </Link>
                 ))

@@ -26,10 +26,10 @@ export default function Stats() {
       <div className="w-[98%] mx-auto px-4 flex flex-col justify-center relative">
 
         <div className="relative ">
-          <h2 className="text-[200px] leading-none text-start font-bold">We are</h2>
+          <h2 className="text-6xl md:text-[200px] leading-none text-start font-bold">We are</h2>
         </div>
 
-        <div className="flex flex-row justify-between gap-2 relative z-0">
+        <div className="flex flex-col md:flex-row justify-between gap-2 relative z-0">
           {
             NumberStat.map((item) => (
               <div
@@ -60,7 +60,7 @@ export default function Stats() {
         </div>
 
         <div>
-          <h2 className="text-[200px] leading-none
+          <h2 className="text-6xl md:text-[200px] leading-none
            text-end font-bold">Techtwen</h2>
         </div>
 
