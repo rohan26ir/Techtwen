@@ -1,6 +1,7 @@
+import Image from "next/image"
 import Counter from "../dynamic/counter"
 
-
+import bgShape from '@/public/shape/card-shape.jpg'
 
 interface NUmberProp {
   id: number,
@@ -33,18 +34,26 @@ export default function Stats() {
             NumberStat.map((item) => (
               <div
                 key={item.id}
-                className="group w-full flex flex-col 
+                className="relative group w-full rounded-lg overflow-hidden text-white">
+
+                <div className="relative z-10 h-full w-full flex flex-col 
                            justify-between gap-20 p-5 
-                           bg-secondary dark:bg-secondary 
-                           hover:bg-[#313257]
-                           font-bold transition-all duration-300"
-              >
-                <div className="h-full text-2xl 
-                    group-hover:text-white">{item.id}</div>
-                <div className="h-full text-5xl 
-                    group-hover:text-white">{item.title}</div>
-                <div className="h-full text-5xl 
-                    group-hover:text-white"><Counter>{item.count}</Counter></div>
+                           font-bold transition-all duration-300">
+                  <div className="h-full text-2xl 
+                    group-hover:text-gray-300">{item.id}</div>
+                  <div className="h-full text-5xl 
+                    group-hover:text-gray-300">{item.title}</div>
+                  <div className="h-full text-5xl 
+                    group-hover:text-gray-300"><Counter>{item.count}</Counter></div>
+                </div>
+
+                <div className="absolute z-0 w-full h-full right-0 left-0 bottom-0 top-0 transform-view">
+                  <Image
+                    src={bgShape}
+                    alt="bgShape"
+                    className="w-full h-full object-cover">
+                  </Image>
+                </div>
               </div>
             ))
           }

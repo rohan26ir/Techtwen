@@ -33,7 +33,7 @@ export default function HomeHero() {
   ];
 
   return (
-    <div className="relative h-130 " >
+    <div className="relative h-screen " >
 
       <Carousel carousel={carouselData} />
 

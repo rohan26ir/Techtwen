@@ -1,3 +1,4 @@
+import Testimonial from "./(public)/components/ui/homeComp/Testimonial";
 import WorkProcess from "./(public)/components/ui/homeComp/workProcess";
 import HomeHero from "./(public)/components/ui/homeHero";
 import Stats from "./(public)/components/ui/Stats";
@@ -18,6 +19,8 @@ export default function Home() {
         <TrustedBy></TrustedBy>
 
         <Stats></Stats>
+
+        <Testimonial></Testimonial>
 
         <WorkProcess></WorkProcess>
       </div>

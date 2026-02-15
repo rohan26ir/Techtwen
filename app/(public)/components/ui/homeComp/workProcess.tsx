@@ -1,9 +1,9 @@
 
-interface processesType {
-  id: number,
-  title: string,
-  description: string
-}
+// interface processesType{
+//   id: number,
+//   title: string,
+//   description: string
+// }
 
 export default function WorkProcess(){
 
@@ -27,7 +27,7 @@ export default function WorkProcess(){
   // ]
 
   return (
-    <div className="bg-secondary dark:bg-secondary  py-20">
+    <div className="bg-background dark:bg-background  py-20">
       <div className="w-[90%] mx-auto">
 
         <div className="flex flex-col justify-center items-center gap-24 text-center">
@@ -45,10 +45,10 @@ export default function WorkProcess(){
                   {/* number */}
                   <div className="flex flex-row justify-center items-center">
                     <div className="w-full h-px   "></div>
-                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-background rounded-lg text-foreground dark:text-foreground">01</p>
-                    <div className="w-full h-px bg-black"></div>
+                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-secondary rounded-lg text-foreground dark:text-foreground">01</p>
+                    <div className="w-full h-px bg-accent"></div>
                   </div>
-                  <div className="p-5 border-2 border-white h-full mr-5">
+                  <div className="p-5 border-2 border-accent h-full mr-5">
                     {/* title */}
                    <div>
                      <h3 className="text-3xl font-bold">Discover</h3>
@@ -67,11 +67,11 @@ export default function WorkProcess(){
                   {/* start */}
                   {/* number */}
                   <div className="flex flex-row justify-center items-center">
-                    <div className="w-full h-px bg-black"></div>
-                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-background rounded-lg text-foreground dark:text-foreground">02</p>
-                    <div className="w-full h-px bg-black"></div>
+                    <div className="w-full h-px bg-accent"></div>
+                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-secondary rounded-lg text-foreground dark:text-foreground">02</p>
+                    <div className="w-full h-px bg-accent"></div>
                   </div>
-                  <div className="p-5 border-2 border-white h-full mr-5">
+                  <div className="p-5 border-2 border-accent h-full mr-5">
                     {/* title */}
                    <div>
                      <h3 className="text-3xl font-bold">Design</h3>
@@ -90,11 +90,11 @@ export default function WorkProcess(){
                   {/* start */}
                   {/* number */}
                   <div className="flex flex-row justify-center items-center">
-                    <div className="w-full h-px bg-black"></div>
-                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-background rounded-lg text-foreground dark:text-foreground">03</p>
-                    <div className="w-full h-px bg-black"></div>
+                    <div className="w-full h-px bg-accent"></div>
+                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-secondary rounded-lg text-foreground dark:text-foreground">03</p>
+                    <div className="w-full h-px bg-accent"></div>
                   </div>
-                  <div className="p-5 border-2 border-white h-full mr-5">
+                  <div className="p-5 border-2 border-accent h-full mr-5">
                   {/* title */}
                    <div>
                      <h3 className="text-3xl font-bold">Develop</h3>
@@ -113,11 +113,11 @@ export default function WorkProcess(){
                   {/* start */}
                   {/* number */}
                   <div className="flex flex-row justify-center items-center">
-                    <div className="w-full h-px bg-black"></div>
-                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-background rounded-lg text-foreground dark:text-foreground">04</p>
+                    <div className="w-full h-px bg-accent"></div>
+                    <p className="text-2xl font-bold w-40 h-14 flex justify-center items-center bg-secondary rounded-lg text-foreground dark:text-foreground">04</p>
                     <div className="w-full h-px "></div>
                   </div>
-                  <div className="p-5 border-2 border-white">
+                  <div className="p-5 border-2 border-accent">
                   {/* title */}
                    <div>
                      <h3 className="text-3xl font-bold">Launch & Support</h3>
