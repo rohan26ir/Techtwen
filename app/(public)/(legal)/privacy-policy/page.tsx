@@ -1,15 +1,19 @@
-export default function TermsOfService() {
+
+
+
+
+export default function Privacy() {
   return (
     <div className="bg-background ">
       <div className="w-[95%] mx-auto py-5 md:py-20">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="mb-8">
-            <h1 className="text-3xl font-bold mb-2">Terms Of Service</h1>
-            <p className="text-muted-foreground mb-4">Last updated on 23 Jan 2025</p>
+            <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
+            <p className="text-muted-foreground mb-4">Last updated on 23 Jan 2026</p>
             <div className="w-full h-px bg-secondary mb-6"></div>
             <p className="text-foreground">
-              Welcome to Landio (&quot;we&quot; or &quot;us&quot;). This Terms Of Service is designed to help you understand how we collect, use, disclose, and safeguard your personal information when you use our website and related services.
+              Welcome to Landio (&quot;we&quot; or &quot;us&quot;). This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your personal information when you use our website and related services.
             </p>
           </div>
 
@@ -54,7 +58,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-semibold mb-4">3. Sharing Your Information</h2>
               <p className="text-foreground">
-                We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this Terms Of Service. We may share information with trusted third-party service providers who assist us in operating our website or conducting our business.
+                We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this Privacy Policy. We may share information with trusted third-party service providers who assist us in operating our website or conducting our business.
               </p>
             </section>
 
@@ -92,9 +96,9 @@ export default function TermsOfService() {
 
             {/* Section 8 */}
             <section>
-              <h2 className="text-2xl font-semibold mb-4">8. Changes to These Terms</h2>
+              <h2 className="text-2xl font-semibold mb-4">8. Changes to This Privacy Policy</h2>
               <p className="text-foreground">
-                We may update these Terms Of Service periodically. We will notify you of any changes by posting the new Terms Of Service on this page. Your continued use of the website after such modifications will constitute your acknowledgment of the modified Terms Of Service.
+                We may update this Privacy Policy periodically. We will notify you of any changes by posting the new Privacy Policy on this page. Your continued use of the website after such modifications will constitute your acknowledgment of the modified Privacy Policy.
               </p>
             </section>
 
@@ -102,7 +106,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-semibold mb-4">9. Contact Us</h2>
               <p className="text-foreground">
-                If you have any questions about these Terms Of Service, please contact us at{' '}
+                If you have any questions about this Privacy Policy, please contact us at{' '}
                 <a href="mailto:support@techtwen.com" className="text-primary hover:underline">
                   support@techtwen.com
                 </a>
@@ -113,4 +117,4 @@ export default function TermsOfService() {
       </div>
     </div>
   );
-}
+};

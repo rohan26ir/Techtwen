@@ -16,8 +16,8 @@ export default function Footer() {
     { id: 4, name: "Contact", path: "/contact-us" },
   ]
   const legalmenu : FooterMenu[] = [
-    { id: 1, name: "Privecy Policy", path: "/" },
-    { id: 2, name: "Terms_Condition", path: "/services" },
+    { id: 1, name: "Privecy", path: "/privacy-policy" },
+    { id: 2, name: "Terms", path: "/term-condition" },
   ]
 
   const socialMenu : FooterMenu[] = [
